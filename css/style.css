@@ -46,10 +46,28 @@ button{
     flex-wrap: wrap;
 }
 
-.cell{
+.cell-easy{
     border: 1px solid black;
     width: calc(100% / 10);
     height: calc(100% / 10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell-hard{
+    border: 1px solid black;
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell-crazy{
+    border: 1px solid black;
+    width: calc(100% / 7);
+    height: calc(100% / 7);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,4 +77,16 @@ button{
     background-color: violet;
     border: 1px solid white;
     color: white;
+}
+
+#select{
+    padding: 5px;
+}
+
+.container, .hide{
+    display: none;
+}
+
+.show{
+    display: block;
 }

@@ -1,12 +1,21 @@
 const grid = document.querySelector(".grid");
 
 for (i=1; i <= 100; i++) {
-    const cells = document.createElement("div");
-    cells.classList.add("cell");
-    cells.innerHTML += i;
-    grid.append(cells);
+    const cellsEasy = document.createElement("div");
+    cellsEasy.classList.add("cell-easy");
+    cellsEasy.innerHTML += i;
+    grid.append(cellsEasy);
 
-    cells.addEventListener("click", function() {
-        cells.classList.toggle("active");
+    cellsEasy.addEventListener("click", function() {
+        cellsEasy.classList.toggle("active");
     });
 }
+
+const playButton = document.getElementById("play");
+const container = document.querySelector(".container");
+const playTitle = document.querySelector(".play-title");
+
+playButton.addEventListener("click", function() {
+    playTitle.classList.add("hide");
+    container.classList.add("show");
+});

@@ -12,13 +12,24 @@
 </head>
 <body>
     <header>
-        <h1>Campo Minato</h1>
-        <button>Play</button>
+        <div class="header-title">
+            <h1>Campo Minato</h1>
+        </div>
+        <div class="header-play">
+            <span>Difficoltà:</span>
+            <select name="levels" id="select">
+                <option class="easy">Easy</option>
+                <option class="hard">Hard</option>
+                <option class="crazy">Crazy</option>
+            </select>
+            <button id="play">Play</button>
+        </div>
     </header>
 
     <main>
-        <div class="grid">
-
+        <h1 class="play-title">Click Play!</h1>
+        <div class="container">
+            <div class="grid"></div>
         </div>
     </main>
 
