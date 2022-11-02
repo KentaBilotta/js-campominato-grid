@@ -18,6 +18,9 @@ header{
 main{
     height: 75vh;
     background-color: #7fffd4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer{
@@ -33,4 +36,27 @@ h1, .footer-message, button{
 button{
     padding: 5px;
     width: 70px;
+}
+
+.grid{
+    border: 1px solid black;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cell{
+    border: 1px solid black;
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.active {
+    background-color: violet;
+    border: 1px solid white;
+    color: white;
 }
