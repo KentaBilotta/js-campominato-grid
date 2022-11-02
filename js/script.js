@@ -12,10 +12,8 @@ for (i=1; i <= 100; i++) {
 }
 
 const playButton = document.getElementById("play");
-const container = document.querySelector(".container");
-const playTitle = document.querySelector(".play-title");
 
 playButton.addEventListener("click", function() {
-    playTitle.classList.add("hide");
-    container.classList.add("show");
+    document.querySelector(".play-title").classList.add("hide");
+    document.querySelector(".container").classList.add("show");
 });
